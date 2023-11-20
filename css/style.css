@@ -7,7 +7,7 @@
 
 /*UTILS*/
 body{
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 :root{
@@ -31,43 +31,89 @@ body{
     flex-basis: 25%;
 }
 
+button{
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: transparent;
+}
+
 .border{
     border: 1px dashed black;
 }
 /*HEADER*/
+
 header{
-    background-color: lightblue;
+    background-color: #3161E0;
     color: white;
+    padding-top: 20px   ;
 }
 
 nav{
-    background-color: goldenrod;
     align-items: center;
-    
 }
+
 
 .list{
     flex-basis: 50%;
 }
 
-ul{
+header ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
 
+}
+
+header li{
+    padding: 0 15px;
+}
+
+.action{
+    text-align: right   ;
 }
 
 .jumbotron{
-  background-color: rgb(1, 1, 167);
-  padding: 30px;
+  background-image: url(../img/jumbo.png);
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-size: cover;
 }
 
-.content{
+.jumb-content{
     max-width: 750px;
-    height: 300px;
-    background-color: rgb(217, 136, 255);
     margin: 0px auto;
-    border: var(--line);
+    padding: 20px 0;
+}
+
+.title-jumb{
+    font-size: 50px;
+}
+
+.par-jumb{
+    font-size: 20px;
+}
+
+.jumb-content > *{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.btn-jumb {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-jumb > button {
+    font-size: large;
+    padding: 20px 20px;
+    border-radius: 40px;
+}
+
+.btn-black{
+    background-color: black;
+    color: white;
+    margin-left: 40px;
 }
 
 /*MAIN*/
