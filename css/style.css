@@ -18,41 +18,46 @@ body{
     --line: 2px dashed black;
 }
 
+.flex{
+    display: flex;
+}
+
 .container{
     max-width: 1000px;
     margin: 0 auto;
-    display: flex;
 }
 
+.fbasis-25{
+    flex-basis: 25%;
+}
+
+.border{
+    border: 1px dashed black;
+}
 /*HEADER*/
 header{
     background-color: lightblue;
+    color: white;
 }
 
-.flex-container{
+nav{
     background-color: goldenrod;
-    display: flex;
-    width: 1000px;
-    margin: var(--space-m);
+    align-items: center;
+    
+}
+
+.list{
+    flex-basis: 50%;
 }
 
 ul{
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 
-.log{
-    flex-basis: 25%;
-    border: var(--line);
-    padding: var(--space-m);
-}
-
-.log.list{
-    flex-basis: 50%;
-}
-
-.box{
+.jumbotron{
   background-color: rgb(1, 1, 167);
   padding: 30px;
 }
